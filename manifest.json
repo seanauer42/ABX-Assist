@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+	"name": "ABX Assist",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": [
+				"http://www.abxtranet.com/maintenance-info/documents/LMP/B767ICA/BAC_AIPC/ABX_AIPC__D6-49287-ABX-0193__PDF_20200222T000000Z/index.html"
+			],
+			"js": ["content.js"]
+		}
+	],
+	"page_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/abx-air-logo.png",
+			"32": "images/abx-air-logo.png",
+			"48": "images/abx-air-logo.png",
+			"128": "images/abx-air-logo.png"
+		}
+	},
+	"icons": {
+		"16": "images/abx-air-logo.png",
+		"32": "images/abx-air-logo.png",
+		"48": "images/abx-air-logo.png",
+		"128": "images/abx-air-logo.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},	
+	"permissions": [
+		"activeTab",
+		"storage"
+	]
+}
