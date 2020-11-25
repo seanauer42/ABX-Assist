@@ -8,5 +8,27 @@
 //     });
 // }, false)
 
-// var formData = new FormData(document.querySelector('form'));
+// var formData = new FormData(document.querySelector('pn'));
 // document.getElementById('manual').innerHTML = formData.pn;
+
+var pn = document.getElementById("part")
+var elements = document.getElementsByTagName('*');
+
+document.getElementById("submit").onclick = function(pn) {
+    for (var i =0; i < elements.length; i++) {
+        var element = elements[i];
+
+        for (var j = 0; j < element.childNodes.length; j++) {
+            var node = element.childNodes[j];
+
+            if (node.nodeType === 3) {
+                var text = node.nodeValue;
+                var replacedText = text.replace(pn, 'normies');
+
+                if (replacedText !== text) {
+                    element.replaceChild(document.createTextNode(replacedText), node);
+                }
+            }
+        }
+    }
+}
