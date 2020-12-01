@@ -1,6 +1,6 @@
 // content.js
 
-alert("Hello browser!")
+alert("Changing shell to pearl")
 
 var elements = document.getElementsByTagName('*');
 

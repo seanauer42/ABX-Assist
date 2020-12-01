@@ -6,6 +6,7 @@
 		"persistant": false
 	},	
 	"permissions": [
+		"declarativeContent",
 		"activeTab",
 		"tabs",
 		"storage"
@@ -19,6 +20,7 @@
 			"run_at": "document_end"
 		}
 	],
+	"options_page": "options.html",
 	"page_action": {
 		"default_popup": "popup.html",
 		"default_icon": {
