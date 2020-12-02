@@ -1,6 +1,6 @@
 // content.js
 
-alert("Changing shell to pearl")
+// alert("Changing shell to pearl")
 
 var elements = document.getElementsByTagName('*');
 

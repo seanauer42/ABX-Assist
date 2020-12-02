@@ -12,5 +12,14 @@ function constructOptions(kButtonColors) {
         });
         page.appendChild(button);
     }
+};
+// constructOptions(kButtonColors);
+function constructButton() {
+    let button = document.createElement('button');
+    button.text = 'Search';
+    button.addEventListener('click', function () {
+        alert(pn.textContent)
+    });
+    page.appendChild(button);
 }
-constructOptions(kButtonColors);
+constructButton();
